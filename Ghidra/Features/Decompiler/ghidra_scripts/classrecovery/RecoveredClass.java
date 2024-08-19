@@ -320,9 +320,7 @@ public class RecoveredClass {
 	}
 
 	public void removeFromConstructorDestructorList(Function function) {
-		if (constructorAndDestructorList.contains(function)) {
-			constructorAndDestructorList.remove(function);
-		}
+		constructorAndDestructorList.remove(function);
 	}
 
 	public void addConstructor(Function function) {
@@ -367,10 +365,7 @@ public class RecoveredClass {
 	}
 
 	public void removeIndeterminateInline(Function function) {
-		if (indeterminateInlineList.contains(function)) {
-			indeterminateInlineList.remove(function);
-		}
-		return;
+		indeterminateInlineList.remove(function);
 	}
 
 	public void addIndeterminateConstructorOrDestructorList(List<Function> list) {
@@ -385,10 +380,7 @@ public class RecoveredClass {
 	}
 
 	public void removeIndeterminateConstructorOrDestructor(Function function) {
-		if (indeterminateList.contains(function)) {
-			indeterminateList.remove(function);
-		}
-		return;
+		indeterminateList.remove(function);
 	}
 
 	public List<Function> getConstructorOrDestructorFunctions() {
