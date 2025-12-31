@@ -536,6 +536,7 @@ public class RecoveredClassHelper {
 
 	public Set<Function> getAllVfunctions(List<Address> vftableAddresses)
 			throws CancelledException {
+
 		if (vftableAddresses.isEmpty()) {
 			return Collections.emptySet();
 		}
