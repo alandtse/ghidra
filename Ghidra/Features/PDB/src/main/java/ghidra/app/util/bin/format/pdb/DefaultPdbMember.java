@@ -94,6 +94,9 @@ public class DefaultPdbMember extends PdbMember {
 			}
 		}
 		// name may contain namespace prefix for non-Member class members
+		if (StringUtils.isEmpty(name)) {
+			return name;
+		}
 		List<String> names = SymbolPathParser.parse(name);
 		return names.get(names.size() - 1);
 	}
