@@ -540,6 +540,7 @@ public class RecoveredClassHelper {
 		if (vftableAddresses.isEmpty()) {
 			return Collections.emptySet();
 		}
+<<<<<<< HEAD
 
 		Set<Function> vfunctionSet = new HashSet<>();
 		for (Address vftableAddress : vftableAddresses) {
